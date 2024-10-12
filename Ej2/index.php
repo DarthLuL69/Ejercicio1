@@ -1,21 +1,20 @@
 <?php
-
-require_once 'persona.php';
-require_once 'informatico.php';
+require_once 'Persona.php';
+require_once 'Informatico.php';
 require_once 'Tecnicoredes.php';
 
 $persona = new Persona("Alexandro", "Suciu", 188, 22);
-$informatico = new Informatico("Miguel", "asdfsadf", 4, 21, "Java", 1);
-$Tecnicoredes = new Tecnicoredes("Rufus", "fsdgsaag", 300, 45, "Yea", "20 años");
+$informatico = new Informatico("Miguel", "orslok", 102.3, 21, "Java", 2);
+$tecnicoRedes = new Tecnicoredes("Rufus", "yupi", 180, 45, true, 20);
 
-echo "Ancestros". $Tecnicoredes->getNombre(). " ". $Tecnicoredes->getApellido(). "
-";
-$informatico->hacerOfimatica();
-$Tecnicoredes->auditRedes();
+echo "Nieto/abuelo PRUEBA:\n";
+$tecnicoRedes->hablar();
+$tecnicoRedes->caminar();
 
-echo "abuelo:";
+//Todos los metodos
+$informatico->programar();
+$informatico->repararOrdenador();
 $informatico->hacerOfimatica();
-$Tecnicoredes->auditRedes();
-$persona->caminar();
+$tecnicoRedes->auditRedes();
 
 ?>
