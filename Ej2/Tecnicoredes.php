@@ -1,26 +1,35 @@
 <?php
-
-class TécnicoRedes extends persona {
-    public $auditarRedes;
-    public $experienciaRedes;
+require_once 'Persona.php';
+class Tecnicoredes extends persona {
+    private $auditoriaRedes;
+    private $experienciaRedes;
     
-    public function __construct($nombre, $apellido, $altura, $edad, $auditarRedes, $experienciaRedes) {
+    public function __construct($nombre, $apellido, $altura, $edad, $auditoriaRedes, $experienciaRedes) {
     parent::__construct($nombre, $apellido, $altura, $edad);
-    $this->auditarRedes = $auditarRedes;
+    $this->auditoriaRedes = $auditoriaRedes;
     $this->experienciaRedes = $experienciaRedes;
     }
     
-    public function aRedes() {
-    echo "Estoy auditando redes como técnico de redes\n";
-    }
+    public function getAuditoriaRedes() {
+    return $this->auditoriaRedes;
     }
     
-    $informatico = new Informático("Juan", "Pérez", 175, 30, ["PHP", "JavaScript"], 5);
-    $informatico->programar();
-    $informatico->repararOrdenador();
-    $informatico->hacerOfimática();
+    public function setAuditoriaRedes($auditoriaRedes) {
+    $this->auditoriaRedes = $auditoriaRedes;
+    }
     
-    $técnicoRedes = new TécnicoRedes("María", "González", 165, 28, ["Cisco", "Juniper"], 3);
-    $técnicoRedes->aRedes();
+    public function getExperienciaRedes() {
+    return $this->experienciaRedes;
+    }
+    
+    public function setExperienciaRedes($experienciaRedes) {
+    $this->experienciaRedes = $experienciaRedes;
+    }
+    
+    public function auditRedes() {
+    echo "Estoy auditando redes como  ". $this->getNombre(). " ". $this->getApellido(). "
+    ";
+    }
+    }
 
 ?>
