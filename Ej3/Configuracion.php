@@ -1,5 +1,4 @@
 <?php
-
 class Configuracion {
 public static $color = "Azul";
 public static $newsletter = true;

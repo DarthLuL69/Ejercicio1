@@ -1,5 +1,4 @@
 <?php
-
 class Coche {
     private $color;
     private $marca;
@@ -78,7 +77,7 @@ class Coche {
     echo "Caballaje: ". $this->caballaje. "\n";
     echo "Plazas: ". $this->plazas. "\n";
     } else {
-    echo "Este no es un objeto Coche\n";
+    echo "";
     }
     }
     }

@@ -28,7 +28,7 @@ class Tecnicoredes extends Persona {
     }
 
     public function auditRedes() {
-        echo "Estoy auditando redes como " . $this->getNombre() . " " . $this->getApellido() . "\n";
+        echo "Auditando redes siendo..." .$this->getNombre().$this->getApellido();
     }
 }
 ?>

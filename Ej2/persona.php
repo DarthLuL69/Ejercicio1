@@ -46,11 +46,11 @@ class Persona {
     }
 
     public function hablar() {
-        echo "Hola soy " . $this->nombre . " " . $this->apellido . "\n";
+        echo "hola soy..." .$this->nombre .$this->apellido;
     }
 
     public function caminar() {
-        echo "Estoy caminando como " . $this->nombre . " " . $this->apellido . "\n";
+        echo "caminado con... " .$this->nombre .$this->apellido;
     }
 }
 

@@ -28,15 +28,15 @@ class Informatico extends Persona {
     }
 
     public function programar() {
-        echo "Estoy programando con " . $this->lenguajes . " como " . $this->getNombre() . " " . $this->getApellido() . "\n";
+        echo "Programando..." .$this->lenguajes. " siendo".$this->getNombre(). " ".$this->getApellido();
     }
 
     public function repararOrdenador() {
-        echo "Estoy reparando ordenadores como " . $this->getNombre() . " " . $this->getApellido() . "\n";
+        echo "Arreglando ordenadores siendo..." .$this->getNombre(). " ".$this->getApellido();
     }
 
     public function hacerOfimatica() {
-        echo "Estoy haciendo ofimática como " . $this->getNombre() . " " . $this->getApellido() . "\n";
+        echo "Ofimatica siendo... " .$this->getNombre().$this->getApellido();
     }
 }
 
